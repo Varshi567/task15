@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+    </style>
+</head>
+
+<body>
+    <form method="get">
+        
+        <fieldset width:"300px">
+            <center>
+        <h2 align="center">Personal Details</h2>
+        <label for="fname">Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="hidden" id="fname" name="fname" value="3000">
+        <label for="pswrd">Password:</label>
+        <input type="password" id="pswrd" name="pswrd"><br><br>
+        <label for="dob">DOB:</label>
+        <input type="datetime-local" id="dob"name="dob"><br><br>
+        <label for="email">Email id:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="name">Gender:</label>
+        <input type="radio"  id="male" name="choose">
+        <label for="male">Male</label>
+        <input type="radio"  id="Female" name="choose">
+        <label for="Female">Female</label><br><br>
+        <label for="num">Contact:</label>
+        <input type="tel" id="num" name="num" pattern="[0-9]{10}"><br><br>
+        <h2 align="center">Educational Qualifications:</h2>
+        <label for="browser">Degree:</label>
+<input list="degrees" name="Degree" id="Degree" placeholder="select a group">
+
+<datalist id="degrees">
+  <option value="Btech">
+  <option value="B.E">
+  <option value="B.SC">
+  <option value="B.COM">
+</datalist><br><br>
+<label for="engineer">Engineering:</label>
+<input list="engineers" name="engineer" id="engineer" placeholder="select a group">
+
+<datalist id="engineers">
+  <option value="ECE">
+  <option value="EEE">
+  <option value="CIVIL">
+  <option value="MECHANICAL">
+  <option value="CSE">
+</datalist><br><br>
+<label for="name">Hobbies:</label>
+<input type="checkbox"  id="chess" name="chooses">
+        <label for="chess">Playing chess</label><input type="image" src="./chess.jpeg" alt="Submit" width="20" height="20">
+        <input type="checkbox"  id="books" name="books">
+        <label for="books">Reading Books</label><input type="image" src="./books.jpeg" alt="Submit" width="20" height="20"><br><br><br>
+        
+        <h2 align="center">Address</h2>
+        <textarea rows="8" cols="50" style:text-align="center"></textarea><br><br>
+        <label for="points">knowledge in html(between 0 to 10):</label>
+           <input type="range" id="points" name="points" min="0" max="10"><br><br>
+           <label for="points">knowledge in css (between 0 to 10):</label>
+           <input type="range" id="points" name="points" min="0" max="10"><br><br>
+           <label for="points">knowledge in js(between 0 and 10):</label>
+           <input type="range" id="points" name="points" min="0" max="10"><br><br>
+           <label for="homepage">Add linkedin:</label>
+           <input type="url" id="homepage" name="homepage"><br><br>
+
+
+           
+
+
+        <label for="doc">Attach a resume</label>
+        <input type="file" id="doc" name="doc" multiple><br><br>
+        <input type="submit">
+        <input type="reset">
+        
+        </center>
+
+        </fieldset>
+        
+
+    </form>
+</body>
+</html>
